@@ -100,9 +100,6 @@ persist.media.treble_omx=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.at_library=libqti-at.so
-ro.vendor.gt_library=libqti-gt.so
-sys.games.gt.prof=0
 
 # Radio
 persist.data.mode=concurrent
