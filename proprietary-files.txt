@@ -12,10 +12,10 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib64/libadsprpc.so
 
 # Audio
-etc/drc/drc_cfg_5.1.txt
-etc/drc/drc_cfg_AZ.txt
-etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
-etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+vendor/etc/drc/drc_cfg_5.1.txt
+vendor/etc/drc/drc_cfg_AZ.txt
+vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 vendor/lib/hw/sound_trigger.primary.msm8992.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -275,12 +275,12 @@ vendor/lib/libmmcamera_s5k3m2xm_eeprom.so
 vendor/lib/libmmcamera_s5k3m2xm_ofilm_eeprom.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
+vendor/etc/firmware/cpp_firmware_v1_1_1.fw
+vendor/etc/firmware/cpp_firmware_v1_1_6.fw
+vendor/etc/firmware/cpp_firmware_v1_2_0.fw
+vendor/etc/firmware/cpp_firmware_v1_4_0.fw
+vendor/etc/firmware/cpp_firmware_v1_6_0.fw
+vendor/etc/firmware/cpp_firmware_v1_8_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_imx258.so
@@ -328,16 +328,16 @@ vendor/lib64/libcom_fingerprints_service.so|84184194dc22c7f82892862f142977bc2c81
 vendor/lib64/hw/fingerprint.fpc.so|9cbb143331d590b7931ef379b55d6aff09dd879b
 
 # Firmware
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv
+vendor/etc/firmware/nvm_tlv.bin
+vendor/etc/firmware/nvm_tlv_1.3.bin
+vendor/etc/firmware/nvm_tlv_2.1.bin
+vendor/etc/firmware/nvm_tlv_3.0.bin
+vendor/etc/firmware/nvm_tlv_3.2.bin
+vendor/etc/firmware/rampatch_tlv.img
+vendor/etc/firmware/rampatch_tlv_1.3.tlv
+vendor/etc/firmware/rampatch_tlv_2.1.tlv
+vendor/etc/firmware/rampatch_tlv_3.0.tlv
+vendor/etc/firmware/rampatch_tlv_3.2.tlv
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8992.so
@@ -403,8 +403,8 @@ vendor/lib64/libRSDriver_adreno.so|05d94ad793ba74c1f6635762eb7871a611001c9c
 vendor/lib64/libscale.so|993c923e266f41d268eaa9f7ce327baf6dd72266
 
 # GPU firmware
-etc/firmware/a420_pfp.fw
-etc/firmware/a420_pm4.fw
+vendor/etc/firmware/a420_pfp.fw
+vendor/etc/firmware/a420_pm4.fw
 
 # IMS
 bin/ims_rtp_daemon:vendor/bin/ims_rtp_daemon
@@ -447,13 +447,13 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxWmaDec.so
 
 # Media firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+vendor/etc/firmware/venus.b00
+vendor/etc/firmware/venus.b01
+vendor/etc/firmware/venus.b02
+vendor/etc/firmware/venus.b03
+vendor/etc/firmware/venus.b04
+vendor/etc/firmware/venus.mbn
+vendor/etc/firmware/venus.mdt
 
 # Perf
 bin/energy-awareness:vendor/bin/energy-awareness
@@ -528,14 +528,14 @@ bin/qmuxd:vendor/bin/qmuxd
 bin/rfs_access:vendor/bin/rfs_access
 bin/rmt_storage:vendor/bin/rmt_storage
 bin/tftp_server:vendor/bin/tftp_server
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
-etc/data/qmi_config.xml
-etc/modem/Diag.cfg
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/qti_telephony_common.xml
-etc/wifibt_diag.cfg
+vendor/etc/data/dsi_config.xml
+vendor/etc/data/netmgr_config.xml
+vendor/etc/data/qmi_config.xml
+vendor/etc/modem/Diag.cfg
+vendor/etc/permissions/qcnvitems.xml
+vendor/etc/permissions/qcrilhook.xml
+vendor/etc/permissions/qti_telephony_common.xml
+vendor/etc/wifibt_diag.cfg
 -vendor/framework/QtiTelephonyServicelibrary.jar
 -vendor/framework/qcnvitems.jar
 -vendor/framework/qcrilhook.jar
@@ -559,7 +559,7 @@ vendor/lib64/libsettings.so|4609cacca0a56dae2596687c8f5f2f9423d4d0d9
 vendor/lib64/libsystem_health_mon.so
 
 # Sensors
-etc/sensor_diag.cfg
+vendor/etc/sensor_diag.cfg
 vendor/lib/hw/activity_recognition.msm8994.so
 lib/hw/sensors.lsm6db0.so:vendor/lib/libsensors.lsm6db0.so
 vendor/lib64/hw/activity_recognition.msm8994.so
@@ -570,7 +570,7 @@ vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 
 # Thermal
-etc/thermal-engine-8992.conf
+vendor/etc/thermal-engine-8992.conf
 vendor/bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
