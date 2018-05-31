@@ -118,7 +118,7 @@ void vendor_load_properties()
         property_override("ro.build.description", "libra-user 7.0 NRD90M V9.5.2.0.NXKCNFA release-keys");
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/libra/libra:7.0/NRD90M/V9.5.2.0.NXKCNFA:user/release-keys");
         property_override_dual("ro.build.product", "ro.vendor.build.product", "libra");
-        property_set("ro.telephony.default_network", "10,10");
+        property_set("ro.telephony.default_network", "20,20");
         property_set("telephony.lteOnCdmaDevice", "1");
         break;
     case AQUA_BOARD_ID:
@@ -127,7 +127,7 @@ void vendor_load_properties()
         property_override("ro.build.description", "aqua-user 7.0 NRD90M V9.5.2.0.NAJCNFA release-keys");
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/aqua/aqua:7.0/NRD90M/V9.5.2.0.NAJCNFA:user/release-keys");
         property_override_dual("ro.build.product", "ro.vendor.build.product", "aqua");
-        property_set("ro.telephony.default_network", "10,10");
+        property_set("ro.telephony.default_network", "20,20");
         property_set("telephony.lteOnCdmaDevice", "1");
         property_set("ro.boot.fingerprint", "fpc");
         break;
