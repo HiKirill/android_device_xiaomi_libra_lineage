@@ -139,6 +139,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
+    
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 67108864
