@@ -366,9 +366,13 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-    <!-- Button illumination -->
+    <!-- Boolean indicating whether we want button brightness support -->
+    <bool name="config_button_brightness_support">true</bool>
+
+    <!-- Buttons brightness 
+    <integer name="config_buttonBrightnessSettingDefault">155</integer>
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
-    <integer name="config_buttonBrightnessSettingDefault">153</integer>
+    <bool name="config_deviceHasButtonBacklight">true</bool>-->
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
