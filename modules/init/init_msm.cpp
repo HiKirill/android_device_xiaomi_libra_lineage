@@ -124,8 +124,8 @@ void vendor_load_properties()
     case AQUA_BOARD_ID:
         property_override_dual("ro.product.model", "ro.vendor.product.model", "Mi-4s");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "aqua");
-        property_override("ro.build.description", "aqua-user 7.0 NRD90M V9.5.2.0.NAJCNFA release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/aqua/aqua:7.0/NRD90M/V9.5.2.0.NAJCNFA:user/release-keys");
+        property_override("ro.build.description", "aqua-user 7.0 NRD90M V9.6.1.0.NAJCNFD release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/aqua/aqua:7.0/NRD90M/V9.6.1.0.NAJCNFD:user/release-keys");
         property_override_dual("ro.build.product", "ro.vendor.build.product", "aqua");
         property_set("ro.telephony.default_network", "9,9");
         property_set("telephony.lteOnCdmaDevice", "1");
