@@ -6,7 +6,7 @@
   },
     {
     "repository": "Vovan77rus59/proprietary_vendor_xiaomi_libra",
-    "target_path": "vendor/xiaomi/libra",
+    "target_path": "vendor/xiaomi",
     "branch": "lineage-15.1"
   },
   {
