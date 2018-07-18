@@ -133,3 +133,6 @@ ro.qc.sdk.sensors.gestures=true
 
 # Time services
 persist.timed.enable=true
+
+# Google services
+ro.opa.eligible_device=true
