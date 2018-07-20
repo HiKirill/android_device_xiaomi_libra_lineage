@@ -25,18 +25,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/libra/device.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_libra
-PRODUCT_DEVICE := libra
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
+# Set those variables here to overwrite the inherited values.
+BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi-4c
+PRODUCT_DEVICE := libra
+PRODUCT_NAME := rr_libra
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_MODEL := Mi-4c
+TARGET_VENDOR := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	BUILD_FINGERPRINT="Xiaomi/libra/libra:7.0/NRD90M/V9.6.2.0.NXKCNFD:user/release-keys" \
-	PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M V9.6.2.0.NXKCNFD release-keys"
+    PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M V9.6.2.0.NXKCNFD release-keys"
+
+BUILD_FINGERPRINT=Xiaomi/libra/libra:7.0/NRD90M/V9.6.2.0.NXKCNFD:user/release-keys
