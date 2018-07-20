@@ -66,16 +66,16 @@ void set_dalvik_values()
 
     if (sys.totalram > 2048ull * 1024 * 1024) {
         // from - phone-xxhdpi-3072-dalvik-heap.mk
-        heapstartsize = "8m";
+        heapstartsize = "16m";
         heapgrowthlimit = "256m";
         heapsize = "512m";
-        heapminfree = "512k";
+        heapminfree = "4m";
     } else {
         // from - phone-xxhdpi-2048-dalvik-heap.mk
-        heapstartsize = "8m";
+        heapstartsize = "16m";
         heapgrowthlimit = "256m";
         heapsize = "512m";
-        heapminfree = "512k";
+        heapminfree = "4m";
     }
 }
 
