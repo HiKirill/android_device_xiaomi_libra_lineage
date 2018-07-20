@@ -4,6 +4,11 @@
     "target_path": "device/qcom/common",
     "branch": "lineage-15.1"
   },
+  {
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-15.1"
+  },
     {
     "repository": "Vovan77rus59/proprietary_vendor_xiaomi_libra",
     "target_path": "vendor/xiaomi",
