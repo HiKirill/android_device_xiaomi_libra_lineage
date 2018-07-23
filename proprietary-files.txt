@@ -532,9 +532,9 @@ etc/data/dsi_config.xml
 etc/data/netmgr_config.xml
 etc/data/qmi_config.xml
 etc/modem/Diag.cfg
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/qti_telephony_common.xml
+vendor/etc/permissions/qcnvitems.xml
+vendor/etc/permissions/qcrilhook.xml
+vendor/etc/permissions/qti_telephony_common.xml
 etc/wifibt_diag.cfg
 -vendor/framework/QtiTelephonyServicelibrary.jar
 -vendor/framework/qcnvitems.jar
