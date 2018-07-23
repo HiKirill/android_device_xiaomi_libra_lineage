@@ -10,12 +10,12 @@
     "branch":      "lineage-15.1"
   },
     {
-    "repository": "Vovan77rus59/proprietary_vendor_xiaomi_libra",
+    "repository": "Vovan77rus59/android_proprietary_vendor_xiaomi_libra",
     "target_path": "vendor/xiaomi",
     "branch": "lineage-15.1"
   },
   {
-    "repository": "Vovan77rus59/kernel_xiaomi_msm8992_libra",
+    "repository": "Vovan77rus59/android_kernel_xiaomi_msm8992_libra",
     "target_path": "kernel/xiaomi/msm8992",
     "branch": "lineage-15.1"
   }
