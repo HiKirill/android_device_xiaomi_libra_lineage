@@ -131,10 +131,28 @@ PRODUCT_COPY_FILES += \
 # dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=4 \
-    dalvik.vm.dex2oat-threads=2 \
     dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false \
-
+    dalvik.vm.dex2oat-threads=4 \
+    ro.sys.fw.dex2oat_thread_count=4
+    
+# dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.check-dex-sum=false \
+    dalvik.vm.checkjni=false \
+    dalvik.vm.usejit=true
+    
+# dexopt
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-flags=v=a,o=v \
+    pm.dexopt.ab-ota=speed-profile \
+    pm.dexopt.bg-dexopt=speed-profile \
+    pm.dexopt.boot=verify \
+    pm.dexopt.first-boot=quicken \
+    pm.dexopt.install=quicken
+    
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
