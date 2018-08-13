@@ -24,9 +24,6 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
-
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/libra/libra-vendor.mk)
 
@@ -131,53 +128,30 @@ PRODUCT_COPY_FILES += \
 # dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=4 \
-    dalvik.vm.image-dex2oat-threads=4 \
-    dalvik.vm.image-dex2oat-filter=speed \
-    dalvik.vm.dex2oat-filter=speed \
-    dalvik.vm.dex2oat-swap=false \
-    dalvik.vm.dex2oat-threads=4 \
-    ro.sys.fw.dex2oat_thread_count=4
-    
-# dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.check-dex-sum=false \
-    dalvik.vm.checkjni=false \
-    dalvik.vm.usejit=true
-    
-# dexopt
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dexopt-flags=v=a,o=v \
-    pm.dexopt.ab-ota=speed-profile \
-    pm.dexopt.bg-dexopt=speed-profile \
-    pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=quicken \
-    pm.dexopt.install=quicken
-    
+    dalvik.vm.dex2oat-threads=2 \
+    dalvik.vm.image-dex2oat-threads=4
+
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=16m \
-    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapsize=512m \
     dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=2m \
+    dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
     
-# HWUI common settings
-PRODUCT_PROPERTY_OVERRIDES += \
+#hwui properties
+    ro.hwui.texture_cache_size=72 \
+    ro.hwui.layer_cache_size=48 \
+    ro.hwui.r_buffer_cache_size=8 \
+    ro.hwui.path_cache_size=32 \
     ro.hwui.gradient_cache_size=1 \
     ro.hwui.drop_shadow_cache_size=6 \
-    ro.hwui.r_buffer_cache_size=8 \
     ro.hwui.texture_cache_flushrate=0.4 \
     ro.hwui.text_small_cache_width=1024 \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024
-    
-# HWUI cache sizes
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=56 \
-    ro.hwui.layer_cache_size=32 \
-    ro.hwui.path_cache_size=16
+ro.hwui.text_large_cache_height=1024
 
 # Display
 PRODUCT_PACKAGES += \
