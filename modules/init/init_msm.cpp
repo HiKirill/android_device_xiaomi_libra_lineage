@@ -115,8 +115,8 @@ void vendor_load_properties()
     case LIBRA_BOARD_ID:
         property_override_dual("ro.product.model", "ro.vendor.product.model", "Mi-4c");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "libra");
-        property_override("ro.build.description", "libra-user 7.0 NRD90M V9.6.3.0.NXKCNFD release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/libra/libra:7.0/NRD90M/V9.6.3.0.NXKCNFD:user/release-keys");
+        property_override("ro.build.description", "libra-user 7.0 NRD90M V9.6.2.0.NXKCNFD release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/libra/libra:7.0/NRD90M/V9.6.2.0.NXKCNFD:user/release-keys");
         property_override_dual("ro.build.product", "ro.vendor.build.product", "libra");
         property_set("ro.telephony.default_network", "9,9");
         property_set("telephony.lteOnCdmaDevice", "1");
