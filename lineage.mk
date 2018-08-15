@@ -45,6 +45,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M V9.6.3.0.NXKCNFD release-keys"
+    PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M V9.6.2.0.NXKCNFD release-keys"
 
-BUILD_FINGERPRINT=Xiaomi/libra/libra:7.0/NRD90M/V9.6.3.0.NXKCNFD:user/release-keys
+BUILD_FINGERPRINT=Xiaomi/libra/libra:7.0/NRD90M/V9.6.2.0.NXKCNFD:user/release-keys
