@@ -1,5 +1,6 @@
 #
-# Copyright 2014 The Android Open Source Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@
 # bitrot and build breakages. Building a component unconditionally does
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
-
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),libra)
